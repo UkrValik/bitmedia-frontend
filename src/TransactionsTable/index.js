@@ -54,7 +54,7 @@ const TransactionsTable = (props) => {
                     {transactions?.map((transaction, index) => (
                         <tr key={transaction.hash} className={index % 2 === 0 ? 'line line__even' : 'line line__odd'}>
                             <td className='col1 body-cell-text'>{parseInt(transaction.blockNumber, 16) || '0'}</td>
-                            <td className='col2 col2-text'>{transaction.hash}</td>
+                            <td className='col2 col2-text'><a href={'https://etherscan.io/tx/' + transaction.hash}>{transaction.hash}</a></td>
                             <td className='col3 body-cell-text'>{transaction.from}</td>
                             <td className='col4 body-cell-text'>{transaction.to}</td>
                             <td className='col5 body-cell-text'>{lastBlockNumber - parseInt(transaction.blockNumber, 16) + 1}</td>
