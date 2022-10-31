@@ -1,0 +1,116 @@
+@import '../common.scss';
+
+.filter-container {
+    flex-direction: row;
+    display: flex;
+    height: 3em;
+    align-items: center;
+    margin-left: $leftMargin;
+    margin-top: 4em;
+}
+
+.search-button {
+    width: 3em;
+    height: 3em;
+    border-radius: 8px;
+    background-color: $blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.filter-input {
+    display: flex;
+    width: auto;
+    flex: 5;
+    height: 2.5em;
+    border: 0;
+    outline: 0;
+    font-family: $fontFamily;
+    margin-left: 16px;
+    &::placeholder {
+        color: $placeholder;
+        font-style: italic;
+        font-size: 14px;
+    }
+    &__container {
+        border: 1px solid $darkGrey;
+        border-radius: 10px;
+        height: 3em;
+        width: 30%;
+        min-width: 20em;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        margin-right: 16px;
+        &--show-dropdown {
+            border-bottom-right-radius: 0;
+        }
+    }
+}
+
+.separator {
+    display: flex;
+    height: 2em;
+    border: 0.5px solid $darkGrey;
+}
+
+.dropdown {
+    font-family: $fontFamily;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    display: flex;
+    flex: 3;
+    padding-inline: 2%;
+    color: $textColor;
+    background-color: $white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 0;
+    &:focus {
+        outline: 0;
+        box-shadow: 0;
+    }
+    &:hover {
+        cursor: pointer;
+    }
+    &__list {
+        position:absolute;
+        background-color: $white;
+        border: 1px solid $darkGrey;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        top: 46.5px;
+        left: -1px;
+        width: 100%;
+
+        &:hover {
+            cursor: auto;
+        }
+    }
+    &__item {
+        padding-left: 7.5%;
+        margin-top: 3px;
+        margin-bottom: 3px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: $textColor;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        font-family: $fontFamily;
+        &:hover {
+            background-color: $darkGrey;
+            cursor: pointer;
+        }
+    }
+    &__placeholder {
+        color: $placeholder;
+        font-style: italic;
+        font-size: 14px;
+    }
+}

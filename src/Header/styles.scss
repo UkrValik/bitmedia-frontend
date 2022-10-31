@@ -1,0 +1,15 @@
+@import '../common.scss';
+
+.header {
+    height: 6em;
+    background-color: $blue;
+    line-height: 6em;
+    &__text {
+        font-family: $fontFamily;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px;
+        color: $white;
+        margin-left: $leftMargin;
+    }
+}

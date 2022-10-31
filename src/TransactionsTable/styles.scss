@@ -1,0 +1,116 @@
+@import '../common.scss';
+
+.transaction-table-container {
+    margin-top: 16px;
+    height: 32.12em;
+}
+
+.transaction-table {
+    margin-inline: $leftMargin;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.header-cell-text {
+    background-color: $blue;
+    color: $white;
+    font-family: $fontFamily;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: left;
+    padding-inline: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.body-cell-text {
+    color: $textColor;
+    font-family: $fontFamily;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 14px;
+    text-align: left;
+    padding-inline: 10px;
+    max-width: 0px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    // &:hover {
+    //     overflow: visible;
+    //     white-space: unset;
+    //     word-wrap: break-word;
+    // }
+}
+
+.col2-text {
+    color: $blue;
+    text-decoration: underline;
+    font-family: $fontFamily;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 14px;
+    text-align: left;
+    padding-inline: 10px;
+    max-width: 0px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.line {
+    height: 2.076em;
+    &__even {
+        background-color: $lightGrey;
+    }
+    &__odd {
+        background-color: $darkGrey;
+    }
+}
+
+.col1 {
+    width: 5%;
+    border-right: 1px solid $white;
+}
+
+.col2 {
+    width: 10%;
+    border-right: 1px solid $white;
+    border-left: 1px solid $white;
+}
+
+.col3 {
+    width: 10%;
+    border-right: 1px solid $white;
+    border-left: 1px solid $white;
+}
+
+.col4 {
+    width: 10%;
+    border-right: 1px solid $white;
+    border-left: 1px solid $white;
+}
+
+.col5 {
+    width: 9%;
+    border-right: 1px solid $white;
+    border-left: 1px solid $white;
+}
+
+.col6 {
+    width: 8%;
+    border-right: 1px solid $white;
+    border-left: 1px solid $white;
+}
+
+.col7 {
+    width: 15%;
+    border-right: 1px solid $white;
+    border-left: 1px solid $white;
+}
+
+.col8 {
+    width: 13%;
+    border-left: 1px solid $white;
+}

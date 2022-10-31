@@ -1,0 +1,28 @@
+@import '../common.scss';
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: $leftMargin;
+    margin-top: 4em;
+    background-color: $darkBlue;
+    height: 4em;
+}
+
+.app-name {
+    font-family: $fontFamily;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    color: $white;
+}
+
+.footer-text {
+    font-family: $fontFamily;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: $white;
+}
